@@ -1,4 +1,15 @@
 import NextLink from 'next/link'
+import { FaLaravel, FaLinux, FaHtml5, FaCss3 } from 'react-icons/fa'
+import {
+  BiLogoJavascript,
+  BiLogoJava,
+  BiLogoSpringBoot,
+  BiLogoFlutter,
+  BiLogoReact,
+  BiLogoNodejs,
+  BiLogoAws,
+  BiLogoPython
+} from 'react-icons/bi'
 import {
   Link,
   Container,
@@ -29,7 +40,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      {/* <Box
+      <Box
         borderRadius="lg"
         mb={6}
         p={3}
@@ -37,8 +48,8 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello!
-      </Box> */}
+        Refactoring
+      </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
@@ -79,26 +90,6 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          {/* Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers. */}
           I am a CS student who is passionate about learning new technologies
           and developing projects. My goal is to become a full-stack developer,
           and I am currently exploring various areas such as web development,
@@ -126,12 +117,6 @@ const Home = () => (
           <BioYear>2001</BioYear>
           Born Ibarra, Ecuador 🇪🇨
         </BioSection>
-        {/* <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
-        </BioSection> */}
         <BioSection>
           <BioYear>2018</BioYear>
           Graduated from High School
@@ -162,6 +147,55 @@ const Home = () => (
           Art, music, playing video games, fishing, and learning new things.
         </Paragraph>
       </Section>
+      <Section>
+        <Heading as="h3" variant="section-title">
+          Technologies i use
+        </Heading>
+        {/* Icons */}
+        <List
+          display="flex"
+          flexWrap="wrap"
+          justifyContent="center"
+          style={{ width: '100%' }}
+        >
+          <ListItem>
+            <FaLaravel size={70} />
+          </ListItem>
+          <ListItem>
+            <BiLogoJavascript size={70} />
+          </ListItem>
+          <ListItem>
+            <BiLogoJava size={70} />
+          </ListItem>
+          <ListItem>
+            <BiLogoSpringBoot size={70} />
+          </ListItem>
+          <ListItem>
+            <BiLogoReact size={70} />
+          </ListItem>
+          <ListItem>
+            <BiLogoNodejs size={70} />
+          </ListItem>
+          <ListItem>
+            <BiLogoFlutter size={70} />
+          </ListItem>
+          <ListItem>
+            <FaLinux size={70} />
+          </ListItem>
+          <ListItem>
+            <FaHtml5 size={70} />
+          </ListItem>
+          <ListItem>
+            <FaCss3 size={70} />
+          </ListItem>
+          <ListItem>
+            <BiLogoAws size={70} />
+          </ListItem>
+          <ListItem>
+            <BiLogoPython size={70} />
+          </ListItem>
+        </List>
+      </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -179,28 +213,6 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-          {/* <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem> */}
-          {/* <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem> */}
           <ListItem>
             <Link href="https://instagram.com/ariel593h" target="_blank">
               <Button
@@ -213,43 +225,6 @@ const Home = () => (
             </Link>
           </ListItem>
         </List>
-
-        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;150k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid> */}
-        {/* 
-        <Heading as="h3" variant="section-title">
-          Newsletter
-        </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p> */}
-
-        {/* <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-            Sign up my newsletter here
-          </Button>
-        </Box> */}
       </Section>
     </Container>
   </Layout>
