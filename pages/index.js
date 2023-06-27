@@ -1,5 +1,6 @@
 import NextLink from 'next/link'
 import { FaLaravel, FaLinux, FaHtml5, FaCss3 } from 'react-icons/fa'
+import { Tooltip } from '@chakra-ui/react'
 import {
   BiLogoJavascript,
   BiLogoJava,
@@ -56,7 +57,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Ariel Fernando
           </Heading>
-          <p>Computer Science Student</p>
+          <p>Jr. Developer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -96,7 +97,7 @@ const Home = () => (
           mobile development, and cloud computing. I am eager to expand my
           knowledge and skills in these domains.
         </Paragraph>
-        <Box align="center" my={4}>
+        {/* <Box align="center" my={4}>
           <Button
             as={NextLink}
             href="/works"
@@ -106,7 +107,7 @@ const Home = () => (
           >
             My portfolio
           </Button>
-        </Box>
+        </Box> */}
       </Section>
 
       <Section delay={0.2}>
@@ -115,7 +116,7 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>2001</BioYear>
-          Born Ibarra, Ecuador 🇪🇨
+          Born in Ibarra, Ecuador 🇪🇨
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
@@ -123,12 +124,8 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2019 to present</BioYear>
-          Studying Computer Science at Polytechnic State University of Carchi
+          Studying CS at Polytechnic State University of Carchi
         </BioSection>
-        {/* <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
-        </BioSection> */}
       </Section>
 
       <Section delay={0.3}>
@@ -136,15 +133,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          {/* Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link> */}
-          Art, music, playing video games, fishing, and learning new things.
+          Art, music, playing video games, fishing, and watching movies.
         </Paragraph>
       </Section>
       <Section>
@@ -159,40 +148,88 @@ const Home = () => (
           style={{ width: '100%' }}
         >
           <ListItem>
-            <FaLaravel size={70} />
+            <Tooltip label="Laravel" aria-label="Laravel">
+              <span>
+                <FaLaravel size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
           <ListItem>
-            <BiLogoJavascript size={70} />
+            <Tooltip label="Javascript" aria-label="Javascript">
+              <span>
+                <BiLogoJavascript size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
           <ListItem>
-            <BiLogoJava size={70} />
+            <Tooltip label="Java" aria-label="Java">
+              <span>
+                <BiLogoJava size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
           <ListItem>
-            <BiLogoSpringBoot size={70} />
+            <Tooltip label="Spring Boot" aria-label="Spring Boot">
+              <span>
+                <BiLogoSpringBoot size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
           <ListItem>
-            <BiLogoReact size={70} />
+            <Tooltip label="React" aria-label="React">
+              <span>
+                <BiLogoReact size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
           <ListItem>
-            <BiLogoNodejs size={70} />
+            <Tooltip label="NodeJS" aria-label="NodeJs">
+              <span>
+                <BiLogoNodejs size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
           <ListItem>
-            <BiLogoFlutter size={70} />
+            <Tooltip label="Flutter" aria-label="Flutter">
+              <span>
+                <BiLogoFlutter size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
           <ListItem>
-            <FaLinux size={70} />
+            <Tooltip label="Linux" aria-label="Linux">
+              <span>
+                <FaLinux size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
           <ListItem>
-            <FaHtml5 size={70} />
+            <Tooltip label="HTML" aria-label="HTML">
+              <span>
+                <FaHtml5 size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
           <ListItem>
-            <FaCss3 size={70} />
+            <Tooltip label="CSS" aria-label="CSS">
+              <span>
+                <FaCss3 size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
           <ListItem>
-            <BiLogoAws size={70} />
+            <Tooltip label="Amazon Web Services" aria-label="AWS">
+              <span>
+                <BiLogoAws size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
           <ListItem>
-            <BiLogoPython size={70} />
+            <Tooltip label="Python" aria-label="Python">
+              <span>
+                <BiLogoPython size={70} />
+              </span>
+            </Tooltip>
           </ListItem>
         </List>
       </Section>
