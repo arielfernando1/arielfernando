@@ -41,7 +41,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-      <Box
+      {/* <Box
         borderRadius="lg"
         mb={6}
         p={3}
@@ -50,12 +50,12 @@ const Home = () => (
         css={{ backdropFilter: 'blur(10px)' }}
       >
         Refactoring
-      </Box>
+      </Box> */}
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Ariel Fernando
+            Ariel A.
           </Heading>
           <p>Jr. Developer</p>
         </Box>
@@ -88,7 +88,7 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Me
         </Heading>
         <Paragraph>
           I am a CS student who is passionate about learning new technologies
@@ -130,7 +130,7 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          I like
         </Heading>
         <Paragraph>
           Art, music, playing video games, fishing, and watching movies.
@@ -236,7 +236,7 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          Find me on
         </Heading>
         <List>
           <ListItem>
