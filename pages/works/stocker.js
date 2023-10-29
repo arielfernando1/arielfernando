@@ -34,6 +34,10 @@ const Work = () => (
           <Meta>Stack</Meta>
           <span>Laravel, MySQL, Livewire, TailwindCSS</span>
         </ListItem>
+        <ListItem>
+          <Meta>Demo</Meta>
+          <span>Soon</span>
+        </ListItem>
         {/* <ListItem>
           <Meta>Blogpost</Meta>
           <Link href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820">

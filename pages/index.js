@@ -29,7 +29,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -246,7 +246,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @arielfernando1
+                arielfernando1
               </Button>
             </Link>
           </ListItem>
@@ -257,10 +257,21 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @ariel593h
+                ariel593h
               </Button>
             </Link>
           </ListItem>
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/ariel-aguirre-74b864145/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoLinkedin />}
+              >
+                LinkedIn
+              </Button>
+            </Link>
+          </ListItem> 
         </List>
       </Section>
     </Container>
