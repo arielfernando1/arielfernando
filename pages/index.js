@@ -91,11 +91,10 @@ const Home = () => (
           Me
         </Heading>
         <Paragraph>
-          I am a CS student who is passionate about learning new technologies
+          Passionate about learning new technologies
           and developing projects. My goal is to become a full-stack developer,
           and I am currently exploring various areas such as web development,
-          mobile development, and cloud computing. I am eager to expand my
-          knowledge and skills in these domains.
+          mobile development, and cloud computing.
         </Paragraph>
         {/* <Box align="center" my={4}>
           <Button
@@ -123,8 +122,8 @@ const Home = () => (
           Graduated from High School
         </BioSection>
         <BioSection>
-          <BioYear>2019 to present</BioYear>
-          Studying CS at Polytechnic State University of Carchi
+          <BioYear>2019 - 2024</BioYear>
+          Studied CS at Polytechnic State University of Carchi
         </BioSection>
       </Section>
 
