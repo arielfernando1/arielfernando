@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbStocker from '../public/images/stocker.png'
+import thumbStocker from '../public/images/works/stocker_logo.png'
 const Works = () => (
   <Layout title="Works">
     <Container>
@@ -14,11 +14,10 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem id="stocker" title="Stocker" thumbnail={thumbStocker}>
-            A small-bussiness store manager made with Laravel.
+            A small-bussiness store manager made with Laravel and Livewire
           </WorkGridItem>
         </Section>
       </SimpleGrid>
-
     </Container>
   </Layout>
 )

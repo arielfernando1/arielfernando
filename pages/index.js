@@ -135,11 +135,10 @@ const Home = () => (
           Art, music, playing video games, fishing, and watching movies.
         </Paragraph>
       </Section>
-      <Section>
+      {/* <Section>
         <Heading as="h3" variant="section-title">
           Technologies i use
         </Heading>
-        {/* Icons */}
         <List
           display="flex"
           flexWrap="wrap"
@@ -231,7 +230,7 @@ const Home = () => (
             </Tooltip>
           </ListItem>
         </List>
-      </Section>
+      </Section> */}
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">

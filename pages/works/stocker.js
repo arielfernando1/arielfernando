@@ -17,7 +17,6 @@ const Work = () => (
       <Title>
         Stocker <Badge>2022-?</Badge>
       </Title>
-      A Small Business Store Manager.
       <List ml={4} my={4}>
         <ListItem>
           <Meta>repo</Meta>

@@ -28,6 +28,9 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
       href={`/works/${id}`}
       scroll={false}
       cursor="pointer"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
     >
       <Image
         src={thumbnail}
