@@ -1,0 +1,22 @@
+{
+    "ariel": {
+        "me": {
+            "title": "About me",
+            "description": "Focused on learning new technologies. My goal is to become a full-stack developer, and I am currently exploring various areas such as web development, mobile development and cloud computing.",
+            "profession": "Software Developer"
+        },
+        "bio": {
+            "title": "Bio",
+            "birthdate": "Born in Ibarra, Ecuador 🇪🇨",
+            "graduated_highschool": "Bachillerato en Ventas e Información Turistica",
+            "graduated_college": "Computer Science, at Polytechnic State University of Carchi"
+        },
+        "hobbies": {
+            "title": "I like",
+            "paragraph": "Art, music, playing video games, fishing, and watching movies."
+        }
+    },
+    "LocaleSwitcher": {
+        "switchLocale": "Cambiar idioma"
+    }
+}

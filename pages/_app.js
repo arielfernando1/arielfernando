@@ -3,6 +3,7 @@ import Fonts from '../components/fonts'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
 import { Analytics } from '@vercel/analytics/react'
+import { NextIntlClientProvider } from 'next-intl'
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
@@ -14,7 +15,6 @@ function Website({ Component, pageProps, router }) {
       <Fonts />
       <Layout router={router}>
         <AnimatePresence
-          exitBeforeEnter
           initial={true}
           onExitComplete={() => {
             if (typeof window !== 'undefined') {
@@ -22,12 +22,21 @@ function Website({ Component, pageProps, router }) {
             }
           }}
         >
-          <Component {...pageProps} key={router.route} />
+          <NextIntlClientProvider
+            locale="en"
+            timeZone="America/New_York"
+            messages={pageProps.messages}
+          >
+            <Component {...pageProps} key={router.route} />
+          </NextIntlClientProvider>
           <Analytics />
         </AnimatePresence>
       </Layout>
     </Chakra>
   )
 }
+
+
+
 
 export default Website

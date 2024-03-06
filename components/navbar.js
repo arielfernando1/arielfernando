@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+import LocaleSwitcher from './LocaleSwitcher'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -80,26 +80,13 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          {/* <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem> */}
-          {/* <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem> */}
-          {/* <LinkItem
-            target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <IoLogoGithub />
-            Source
-          </LinkItem> */}
         </Stack>
 
         <Box flex={1} align="right">
+          <LocaleSwitcher />
           <ThemeToggleButton />
+
+
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
@@ -119,15 +106,6 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/posts">
                   Posts
                 </MenuItem>
-                {/* <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
-                  Uses
-                </MenuItem> */}
-                {/* <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
-                  View Source
-                </MenuItem> */}
               </MenuList>
             </Menu>
           </Box>
@@ -135,6 +113,17 @@ const Navbar = props => {
       </Container>
     </Box>
   )
+}
+
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      // You can get the messages from anywhere you like. The recommended
+      // pattern is to put them in JSON files separated by locale and read
+      // the desired one based on the `locale` received from Next.js.
+      messages: (await import(`../messages/${context.locale}.json`)).default
+    }
+  }
 }
 
 export default Navbar

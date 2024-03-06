@@ -1,0 +1,13 @@
+.switchButton {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.switchButton:hover {
+  background-color: #45a049;
+}
