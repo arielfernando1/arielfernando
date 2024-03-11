@@ -105,7 +105,7 @@ function Home() {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            Find me on
+            {t('social.title')}
           </Heading>
           <List>
             <ListItem>

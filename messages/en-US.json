@@ -8,15 +8,15 @@
         "bio": {
             "title": "Bio",
             "birthdate": "Born in Ibarra, Ecuador 🇪🇨",
-            "graduated_highschool": "Bachillerato en Ventas e Información Turistica",
+            "graduated_highschool": "High School Degree in Sales and Tourism Information",
             "graduated_college": "Computer Science, at Polytechnic State University of Carchi"
         },
         "hobbies": {
             "title": "I like",
             "paragraph": "Art, music, playing video games, fishing, and watching movies."
+        },
+        "social": {
+            "title": "Find me on"
         }
-    },
-    "LocaleSwitcher": {
-        "switchLocale": "Cambiar idioma"
     }
 }

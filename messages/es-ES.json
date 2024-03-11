@@ -9,10 +9,14 @@
             "title": "Biografía",
             "birthdate": "Nacido en Ibarra, Ecuador 🇪🇨",
             "graduated_highschool": "Bachillerato en Ventas e Información Turistica",
-            "graduated_college": "Ingenieria en Ciencias de la Computación, Universidad Politécnica Estatal del Carchi"
+            "graduated_college": "Ciencias de la Computación, Universidad Politécnica Estatal del Carchi"
         },
         "hobbies": {
-            "paragraph": "Me gusta aprender nuevas tecnologías, leer, escuchar música, ver películas y series, y jugar videojuegos."
+            "title": "Me gusta",
+            "paragraph": "Aprender nuevas tecnologías, leer, escuchar música, ver películas y series, y jugar videojuegos."
+        },
+        "social": {
+            "title": "Encuentrame en"
         }
     }
 }
