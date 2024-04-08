@@ -17,6 +17,9 @@
         },
         "social": {
             "title": "Find me on"
+        },
+        "skills": {
+            "title": "Skills"
         }
     }
 }

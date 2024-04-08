@@ -15,6 +15,10 @@ import Section from '../components/section'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
+import { FaLaravel, FaReact, FaPhp} from 'react-icons/fa'
+import { SiLivewire } from "react-icons/si";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import SkillItem from '../components/skill_item'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -98,9 +102,16 @@ function Home() {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            {t('hobbies.title')}
+            {t('skills.title')}
           </Heading>
-          <Paragraph>{t('hobbies.paragraph')}</Paragraph>
+          <List display="flex" flexWrap="wrap" justifyContent="center" style={{width: '100%'}}> 
+            <SkillItem icon={<FaReact size={64} color="#61DAFB" />} name="React" />
+            <SkillItem icon={<SiLivewire size={64} />} name="Livewire" />
+            <SkillItem icon={<FaLaravel size={64} color="#FF2D20" />} name="Laravel" />
+            <SkillItem icon={<FaPhp size={64} color="#777BB4" />} name="PHP" />
+            <SkillItem icon={<BiLogoSpringBoot size={64} color="#6DB33F" />} name="Spring Boot" />
+            
+          </List>
         </Section>
 
         <Section delay={0.3}>
