@@ -20,7 +20,7 @@ const Posts = () => (
         Popular Posts
       </Heading> */}
 
-      <Section delay={0.1}>
+      {/* <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="Enviando correos con Laravel Workflow"
@@ -28,7 +28,7 @@ const Posts = () => (
             href="https://medium.com/@arielferaguirre.2001/mailing-with-laravel-workflow-e9e3f972d692"
           />
         </SimpleGrid>
-      </Section>
+      </Section> */}
 
       {/* <Section delay={0.3}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>

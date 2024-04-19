@@ -15,13 +15,14 @@ const Work = () => (
   <Layout title="Stocker">
     <Container>
       <Title>
-        Stocker <Badge>2022-?</Badge>
+        Stocker <Badge>2022-now</Badge>
       </Title>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>repo</Meta>
           <Link href="https://github.com/arielfernando1/stocker">
-            https://github.com/arielfernando1/stocker <ExternalLinkIcon mx="2px" />
+            https://github.com/arielfernando1/stocker{' '}
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -34,13 +35,14 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Demo</Meta>
-          <span>Soon</span>
+          <Link href="http://stockerapp.ddns.net">
+            http://stockerapp.ddns.net <ExternalLinkIcon mx="2px" />
+          </Link>
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/stocker_01.png" alt="Stocker" />
-      <WorkImage src="/images/works/stocker_02.png" alt="Inkdrop" />
-
+      {/* <WorkImage src="/images/works/stocker_01.png" alt="Stocker" />
+      <WorkImage src="/images/works/stocker_02.png" alt="Inkdrop" /> */}
     </Container>
   </Layout>
 )
