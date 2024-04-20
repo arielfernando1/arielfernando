@@ -35,8 +35,8 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Demo</Meta>
-          <Link href="http://stockerapp.ddns.net">
-            http://stockerapp.ddns.net <ExternalLinkIcon mx="2px" />
+          <Link href="https://stockerapp.ddns.net">
+            https://stockerapp.ddns.net <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
